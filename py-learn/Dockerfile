@@ -4,7 +4,8 @@ LABEL maintainer="shoothzj@gmail.com"
 
 COPY source /opt/sh/
 
-RUN pip3 install --upgrade pip && \
+RUN dnf install -y pip && \
+pip3 install --upgrade pip && \
 pip3 install jupyter && \
 pip3 install pyspark
 
